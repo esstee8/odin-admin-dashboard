@@ -9,7 +9,8 @@
 }
 
 .sidebar {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
+    background-image: linear-gradient(to right, mediumaquamarine , cornflowerblue);
 }
 
 .sidebar > div {
@@ -20,8 +21,13 @@
 
 }
 
+.sidebar > div > p {
+    color: azure;
+}
+
 .dashboard {
-    background-color: cornflowerblue;
+    /*background-color: cornflowerblue;*/
+    background-image: linear-gradient(to right, cornflowerblue, mediumaquamarine);
 }
 
 .sidebar > div > p {
