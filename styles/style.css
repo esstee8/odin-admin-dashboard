@@ -12,6 +12,7 @@
 }
 .container * {
     background: pink;
+    margin: 10px;
 }
 
 .sidebar {
@@ -20,7 +21,12 @@
 
 .left-column {
     display: grid;
+}
 
+.right-column {
+    display: inline-block;
+    width: 90vw;
+    height: 45vh;
 }
 
 .header {
@@ -30,13 +36,14 @@
 }
 
 .header-first-row {
-    display:inline-grid;
+    display:grid;
     grid-template-columns: 1fr 1fr;
+    display: inline-flex;
 }
 
 .header-second-row {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
     background-color: #4d90fe;
 }
 
@@ -101,13 +108,13 @@ input[type="submit"]:hover {
 
     /*Top Right Settings Corner*/
 .user-settings-corner {
-    display: inline-grid;
-    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
 }
 
 .circle-profile-image {
     width: 75%;
-    height: 75%;
+    /* height: 75%; */
     clip-path: circle();
     /*object-fit: cover;*/
     /*position: sticky;*/
@@ -119,7 +126,24 @@ input[type="submit"]:hover {
 
 /* Second Row of Header */
 .circle-profile-image-BIG {
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 75%;
     clip-path: circle();
+    object-fit: cover;
+    margin-left: auto;
+}
+
+#name-BIG {
+    font-size: x-large;
+}
+
+/*Organize BIG profile photo to be side-to-side with the greeting*/
+.main-greeting {
+    display: inline-grid;
+    grid-template-columns: 1fr 0.75fr;
+}
+
+.mini-container {
+    /* Pad between the BIG-icon+greeting and the action buttons */
+    /* margin-right:8em; */
 }
