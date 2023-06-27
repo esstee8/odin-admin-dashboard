@@ -6,11 +6,14 @@
     grid-template-columns: 1fr 5fr;
     grid-gap: 10px;
     /*grid-auto-rows: minmax(50pc, auto);*/
+    height:100vh;
 }
+
 
 .sidebar {
     /*background-color: aquamarine;*/
     background-image: linear-gradient(to right, mediumaquamarine , cornflowerblue);
+    /*height:100%;*/
 }
 
 .sidebar > div {
@@ -18,22 +21,18 @@
     margin-top: 5px;
     padding: 15px;
     overflow: auto;
-
 }
 
 .sidebar > div > p {
     color: azure;
+    margin: 15px;
 }
 
 .dashboard {
     /*background-color: cornflowerblue;*/
     background-image: linear-gradient(to right, cornflowerblue, mediumaquamarine);
+    /*height:100%;*/
 }
-
-.sidebar > div > p {
-    margin: 15px;
-}
-
 
 
 
