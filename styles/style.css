@@ -32,7 +32,11 @@
     /*background-color: cornflowerblue;*/
     background-image: linear-gradient(to right, cornflowerblue, mediumaquamarine);
     /*height:100%;*/
+    display: grid;
+    grid-template-rows: 1fr 4fr;
 }
+
+.dashboard >
 
 
 
