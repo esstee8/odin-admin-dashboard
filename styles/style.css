@@ -1,149 +1,190 @@
 * {
-    /*background-color: aqua;*/
-    border: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
-
-.container{
+.main{
     display: grid;
-    gap: 15px;
-    /*LEFT COLUMN | RIGHT COLUMN*/
-    grid-template-columns: 1fr 1fr;
-}
-.container * {
-    background: pink;
-    margin: 10px;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    /*grid-auto-rows: minmax(50pc, auto);*/
 }
 
 .sidebar {
-    display: grid;
+    background-color: aquamarine;
 }
 
-.left-column {
-    display: grid;
+.dashboard {
+    background-color: cornflowerblue;
 }
 
-.right-column {
-    display: inline-block;
-    width: 90vw;
-    height: 45vh;
-}
-
-.header {
-    box-shadow: black;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.header-first-row {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    display: inline-flex;
-}
-
-.header-second-row {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    background-color: #4d90fe;
-}
-
-.main-content {
-    display: grid;
+.sidebar > div > p {
+    margin: 15px;
 }
 
 
 
-/* Search Bar */
-input{
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    height: 20px;
-    width: 500px;
-    border:3px solid #eaeaea;
-    outline:none;
-}
-input:hover{
-    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
-}
-input:focus{
-    border-color:#4d90fe;
-}
 
-input[type="submit"] {
-    border-radius: 2px;
-    background: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    color: #757575;
-    cursor: default;
-    font-size: 14px;
-    font-weight: bold;
-    width: 100px;
-    padding: 0 16px;
-    height:36px;
-}
-input[type="submit"]:hover {
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    background: #f8f8f8;
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    color: #222;
-}
-.search-bar-go{
-    display: inline-flex;
-}
 
-#search-icon {
-    /* Center the search */
-    padding: 1.5em;
-}
+/*!**/
+/** {*/
+/*    !*background-color: aqua;*!*/
+/*    border: red;*/
+/*    padding: 5px;*/
+/*    overflow: auto;*/
+/*    !*!/For center align*!*/
+/*    margin: 0 auto;*/
+/*    !*!/ For grow & shrink as per screen size change values as per your requirements*!*/
+/*    width: 95%;*/
+/*    height: 95%;*/
+/*}*/
 
-#search-bar {
-    display: flex;
-}
 
-#go {
-    margin-right:8em;
-}
+/*.container{*/
+/*    display: grid;*/
+/*    gap: 15px;*/
+/*    !*overflow: ;*!*/
+/*    !*LEFT COLUMN | RIGHT COLUMN*!*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*}*/
+/*.container * {*/
+/*    background: pink;*/
+/*    margin: 10px;*/
+/*    overflow: auto;*/
+/*}*/
 
-    /*Top Right Settings Corner*/
-.user-settings-corner {
-    display: grid;
-    grid-template-columns: repeat(3, 75px);
-}
+/*.sidebar {*/
+/*    display: grid;*/
+/*}*/
 
-.circle-profile-image {
-    width: 75%;
-    /* height: 75%; */
-    clip-path: circle();
-    /*object-fit: cover;*/
-    /*position: sticky;*/
-}
+/*.left-column {*/
+/*    display: grid;*/
+/*}*/
 
-#bell-icon {
-    padding: 1.5em;
-}
+/*.right-column {*/
+/*    display: inline-block;*/
+/*    width: 90vw;*/
+/*    height: 45vh;*/
+/*}*/
 
-/* Second Row of Header */
-.circle-profile-image-BIG {
-    width: 25%;
-    height: 75%;
-    clip-path: circle();
-    object-fit: cover;
-    margin-left: auto;
-}
+/*.header {*/
+/*    box-shadow: black;*/
+/*    display: grid;*/
+/*    grid-template-rows: 1fr 1fr;*/
+/*}*/
 
-#name-BIG {
-    font-size: x-large;
-}
+/*.header-first-row {*/
+/*    display:grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    display: inline-flex;*/
+/*}*/
 
-/*Organize BIG profile photo to be side-to-side with the greeting*/
-.main-greeting {
-    display: inline-grid;
-    grid-template-columns: 1fr 0.75fr;
-}
+/*.header-second-row {*/
+/*    !* display: grid; *!*/
+/*    !* grid-template-columns: 1fr 1fr; *!*/
+/*    background-color: #4d90fe;*/
+/*}*/
 
-.mini-container {
-    /* Pad between the BIG-icon+greeting and the action buttons */
-    /* margin-right:8em; */
-}
+/*.main-content {*/
+/*    display: grid;*/
+/*}*/
+
+
+
+/*!* Search Bar *!*/
+/*input{*/
+/*    border: none;*/
+/*    padding: 10px;*/
+/*    margin: 10px;*/
+/*    height: 20px;*/
+/*    width: 500px;*/
+/*    border:3px solid #eaeaea;*/
+/*    outline:none;*/
+/*}*/
+/*input:hover{*/
+/*    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;*/
+/*}*/
+/*input:focus{*/
+/*    border-color:#4d90fe;*/
+/*}*/
+
+/*input[type="submit"] {*/
+/*    border-radius: 2px;*/
+/*    background: #f2f2f2;*/
+/*    border: 1px solid #f2f2f2;*/
+/*    color: #757575;*/
+/*    cursor: default;*/
+/*    font-size: 14px;*/
+/*    font-weight: bold;*/
+/*    width: 100px;*/
+/*    padding: 0 16px;*/
+/*    height:36px;*/
+/*}*/
+/*input[type="submit"]:hover {*/
+/*    box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
+/*    background: #f8f8f8;*/
+/*    border: 1px solid #c6c6c6;*/
+/*    box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
+/*    color: #222;*/
+/*}*/
+/*.search-bar-go{*/
+/*    display: inline-flex;*/
+/*}*/
+
+/*#search-icon {*/
+/*    !* Center the search *!*/
+/*    padding: 1.5em;*/
+/*}*/
+
+/*#search-bar {*/
+/*    display: flex;*/
+/*}*/
+
+/*#go {*/
+/*    margin-right:8em;*/
+/*}*/
+
+/*    !*Top Right Settings Corner*!*/
+/*.user-settings-corner {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 75px);*/
+/*}*/
+
+/*.circle-profile-image {*/
+/*    width: 75%;*/
+/*    !* height: 75%; *!*/
+/*    clip-path: circle();*/
+/*    !*object-fit: cover;*!*/
+/*    !*position: sticky;*!*/
+/*}*/
+
+/*#bell-icon {*/
+/*    padding: 1.5em;*/
+/*}*/
+
+/*!* Second Row of Header *!*/
+/*.circle-profile-image-BIG {*/
+/*    width: 25%;*/
+/*    height: 75%;*/
+/*    clip-path: circle();*/
+/*    object-fit: cover;*/
+/*    margin-left: auto;*/
+/*}*/
+
+/*#name-BIG {*/
+/*    font-size: x-large;*/
+/*}*/
+
+/*!*Organize BIG profile photo to be side-to-side with the greeting*!*/
+/*.main-greeting {*/
+/*    display: inline-grid;*/
+/*    grid-template-columns: 1fr 0.75fr;*/
+/*}*/
+
+/*.mini-container {*/
+/*    !* Pad between the BIG-icon+greeting and the action buttons *!*/
+/*    !* margin-right:8em; *!*/
+/*}*/
+
+/*.action-buttons {*/
+/*    padding: 5px;*/
+/*    !* shape-rendering: auto; *!*/
+/*}*!*/
