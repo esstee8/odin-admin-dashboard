@@ -4,7 +4,7 @@
 }
 
 div {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .main{
@@ -62,6 +62,7 @@ div {
 }
 
 h3 {
+    font-weight: bold;
     text-align: center;
     padding: 5px;
     margin: 5px;
@@ -157,4 +158,47 @@ h3 {
 .dashboard-header {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.dashboard-notifications {
+    padding: 1.5em;
+}
+
+.dashboard-search-icon {
+    padding: 1.5em;
+}
+
+.dashboard-search-bar {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+}
+
+.dashboard-greeting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+.dashboard-greeting-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.dashboard-action-buttons {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+.dashboard-action-buttons > div {
+    margin: 0 auto
+}
+
+.dashboard-account-status-buttons {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.dashboard-account-status-buttons > div {
+    margin: 0 auto
 }
