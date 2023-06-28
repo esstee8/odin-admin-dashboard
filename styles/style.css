@@ -9,16 +9,13 @@ div {
 .main{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-gap: 10px;
-    /*grid-auto-rows: minmax(50pc, auto);*/
-    height:100vh;
+    grid-gap: 8px;
+    height:10vh;
 }
 
 
 .sidebar {
-    /*background-color: aquamarine;*/
     background-image: linear-gradient(to right, mediumaquamarine , cornflowerblue);
-    /*height:100%;*/
 }
 
 .sidebar > div {
@@ -35,19 +32,9 @@ div {
 }
 
 .dashboard {
-    /*background-color: cornflowerblue;*/
     background-image: linear-gradient(to right, cornflowerblue, mediumaquamarine);
-    /*height:100%;*/
     display: grid;
     grid-template-rows: 1fr 4fr;
-}
-
-#dashboard-header{
-/*    Apply 5px red border to this container*/
-    border: red;
-    padding: 5px;
-    overflow: auto;
-
 }
 
 /* CSS to apply to 1st-lvl child of dashboard*/
@@ -63,27 +50,22 @@ div {
     /*overflow: auto;*/
 }
 
-/*Apply grid to `meat` of the dashboard*/
 .dashboard-body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 2fr 1fr;
 }
 
-.dashboard-projects {
+.dashboard-projects-cards-list {
     display: grid;
-
-    /*grid-template-columns: repeat(auto-fit, 200px);*/
-
-    grid-template-columns: repeat(2, min(200px, 50%));
-    grid-template-rows: repeat(auto-fit, min(200px, 50%));
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* CARD STYLING*/
 .card {
     box-shadow: 0 4px 8px 0 rgba(45, 234, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+    max-width: 225px;
+    margin: 15px;
     text-align: center;
     font-family: arial, sans-serif;
 }
