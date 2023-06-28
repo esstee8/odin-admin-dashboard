@@ -23,19 +23,20 @@ const announcementTitles = [
 ];
 
 const profile_photos = [
-    "kermit.png",
-    "doguito.jpeg",
-    "dog-egg.jpeg",
-    "dog-ears.jpeg"
+    ["kermit.png", "@kermie", "Ribbit Enthusiast"],
+    ["doguito.jpeg", "@doguito", "Dog in a Crepe"],
+    ["dog-egg.jpeg", "@dogshell", "Very Soft Dog"],
+    ["dog-ears.jpeg", "@dogears", "Professional Listener"],
 ]
+
 
 
 // Generates a list of cards as HTML, between 1 and 30 extra cards generated.
 // Returns it as a string
 function generateProjectCards() {
     let output = "";
-    // card_amount = Math.floor(Math.random() * 31);
-    card_amount = 9;
+    card_amount = Math.floor(Math.random() * 14);
+    // card_amount = 9;
     for(i = 0; i < card_amount; i++){
         output += `
                     <div class="card">
@@ -58,8 +59,8 @@ function generateProjectCards() {
 // Same as the `generateProjectCards` function, but, for the `announcement` card and uses a random title
 function generateAnnouncementCards() {
     let output = "";
-    // card_amount = Math.floor(Math.random() * 16);
-    card_amount = 4
+    card_amount = Math.floor(Math.random() * 16);
+    // card_amount = 4
     for(i = 0; i < card_amount; i++){
         let randomTitle = announcementTitles[Math.floor(Math.random() * announcementTitles.length)];
         output += `
@@ -73,9 +74,31 @@ function generateAnnouncementCards() {
     return output
 }
 
+// Same as the two functions above; but for generating 'Trending' cards
+function generateTrendingCards() {
+    let output = "";
+    card_amount = Math.floor(Math.random() * 7);
+    for (i = 0; i < card_amount; i++) {
+        let randomTitle = profile_photos[Math.floor(Math.random() * profile_photos.length)];
+        output += `
+
+                    <div class="trending-card">
+                        <div class="trending-card-profile-photo">
+                            <img src="assets/profile-photos/${randomTitle[0]}" class="profile-photo-small" alt="Dog in a crepe">
+                        </div>
+                        <div class="trending-card-text">
+                            <p class="username"> <strong>${randomTitle[1]}</strong> </p>
+                            <p class="headline">${randomTitle[2]}</p>
+                        </div>
+                    </div>
+                    
+        `
+    }
+    return output
+}
 
 
 // Set the project cards
 document.getElementById('the-card-container').innerHTML = generateProjectCards();
 document.getElementById('the-announcements-container').innerHTML = generateAnnouncementCards();
-
+document.getElementById('the-trending-container').innerHTML = generateTrendingCards();

@@ -111,7 +111,7 @@ h3 {
     width: 90px;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    align-items: end;
+    /*align-items: end;*/
 }
 
 .trending-card {
@@ -120,13 +120,15 @@ h3 {
 }
 
 .trending-card-profile-photo {
-    align-items: end;
     padding: 5px;
+    margin-left: auto;
 }
 
 .trending-card-text {
+    margin: auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
+
 }
 
 .trending-card-text > p {
