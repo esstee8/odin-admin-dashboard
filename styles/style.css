@@ -50,6 +50,22 @@ div {
 
 }
 
+.dashboard > div {
+    margin-bottom: 5px;
+}
+
+.dashboard > div > div {
+    /*margin-bottom: 5px;*/
+    /*margin-top: 5px;*/
+    /*padding: 15px;*/
+    /*overflow: auto;*/
+}
+
+.dashboard-body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr;
+}
 
 
 /*!*APPLY TO 'header' and 'body' of the 'dashboard'*!*/
