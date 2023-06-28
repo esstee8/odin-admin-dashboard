@@ -1,7 +1,10 @@
-let output = "";
-card_amount = Math.floor(Math.random() * 31);
-for(i = 0; i < card_amount; i++){
-    output += `
+// Generates a list of cards as HTML, between 1 and 30 extra cards generated.
+// Returns it as a string
+function generateProjectCards() {
+    let output = "";
+    card_amount = Math.floor(Math.random() * 31);
+    for(i = 0; i < card_amount; i++){
+        output += `
                     <div class="card">
                         <img src="assets/sad_chihuahua.jpg" alt="Dog with tears of joy" style="width:100%">
                         <h1>Tears of Joy Dog</h1>
@@ -14,8 +17,13 @@ for(i = 0; i < card_amount; i++){
                             <button>ᛘ️</button>
                         </div>
                     </div>
-
 `
+    }
+    return output
 }
 
-document.getElementById('the-card-container').innerHTML = output;
+
+
+
+
+document.getElementById('the-card-container').innerHTML = generateProjectCards();
