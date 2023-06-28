@@ -1,6 +1,11 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, sans-serif;
 }
+
+div {
+    border: 1px solid red;
+}
+
 .main{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -26,6 +31,7 @@
 .sidebar > div > p {
     color: azure;
     margin: 15px;
+    font-family: Verdana, sans-serif;
 }
 
 .dashboard {
@@ -36,7 +42,28 @@
     grid-template-rows: 1fr 4fr;
 }
 
-.dashboard >
+#dashboard-header{
+/*    Apply 5px red border to this container*/
+    border: red;
+    padding: 5px;
+    overflow: auto;
+
+}
+
+
+
+/*!*APPLY TO 'header' and 'body' of the 'dashboard'*!*/
+/*.dashboard > div > div {*/
+/*    margin-bottom: 5px;*/
+/*    margin-top: 5px;*/
+/*    padding: 15px;*/
+/*    !*MAY HAVE TO REMOVE OVERFLOW AT SOME POINT IN FUTURE?*!*/
+/*    overflow: auto;*/
+/*    border: red;*/
+/*    margin: 5px;*/
+/*    grid-auto-rows: minmax(50pc, auto);*/
+
+/*}*/
 
 
 
