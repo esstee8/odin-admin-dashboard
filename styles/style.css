@@ -1,5 +1,5 @@
 * {
-    font-family: Verdana, sans-serif;
+    font-family: "Comic Sans MS", sans-serif;
 }
 
 div {
@@ -50,10 +50,12 @@ div {
 
 }
 
+/* CSS to apply to 1st-lvl child of dashboard*/
 .dashboard > div {
     margin-bottom: 5px;
 }
 
+/* CSS to apply to 2nd-lvl child of dashboard*/
 .dashboard > div > div {
     /*margin-bottom: 5px;*/
     /*margin-top: 5px;*/
@@ -61,190 +63,48 @@ div {
     /*overflow: auto;*/
 }
 
+/*Apply grid to `meat` of the dashboard*/
 .dashboard-body {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 2fr;
+    grid-template-rows: 2fr 1fr;
 }
 
+.dashboard-projects {
+    display: grid;
 
-/*!*APPLY TO 'header' and 'body' of the 'dashboard'*!*/
-/*.dashboard > div > div {*/
-/*    margin-bottom: 5px;*/
-/*    margin-top: 5px;*/
-/*    padding: 15px;*/
-/*    !*MAY HAVE TO REMOVE OVERFLOW AT SOME POINT IN FUTURE?*!*/
-/*    overflow: auto;*/
-/*    border: red;*/
-/*    margin: 5px;*/
-/*    grid-auto-rows: minmax(50pc, auto);*/
+    /*grid-template-columns: repeat(auto-fit, 200px);*/
 
-/*}*/
+    grid-template-columns: repeat(2, min(200px, 50%));
+    grid-template-rows: repeat(auto-fit, min(200px, 50%));
+}
 
+/* CARD STYLING*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(45, 234, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial, sans-serif;
+}
 
+.price {
+    color: crimson;
+    font-size: 22px;
+}
 
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: cyan;
+    background-color: darkturquoise;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
 
-/*!**/
-/** {*/
-/*    !*background-color: aqua;*!*/
-/*    border: red;*/
-/*    padding: 5px;*/
-/*    overflow: auto;*/
-/*    !*!/For center align*!*/
-/*    margin: 0 auto;*/
-/*    !*!/ For grow & shrink as per screen size change values as per your requirements*!*/
-/*    width: 95%;*/
-/*    height: 95%;*/
-/*}*/
-
-
-/*.container{*/
-/*    display: grid;*/
-/*    gap: 15px;*/
-/*    !*overflow: ;*!*/
-/*    !*LEFT COLUMN | RIGHT COLUMN*!*/
-/*    grid-template-columns: 1fr 1fr;*/
-/*}*/
-/*.container * {*/
-/*    background: pink;*/
-/*    margin: 10px;*/
-/*    overflow: auto;*/
-/*}*/
-
-/*.sidebar {*/
-/*    display: grid;*/
-/*}*/
-
-/*.left-column {*/
-/*    display: grid;*/
-/*}*/
-
-/*.right-column {*/
-/*    display: inline-block;*/
-/*    width: 90vw;*/
-/*    height: 45vh;*/
-/*}*/
-
-/*.header {*/
-/*    box-shadow: black;*/
-/*    display: grid;*/
-/*    grid-template-rows: 1fr 1fr;*/
-/*}*/
-
-/*.header-first-row {*/
-/*    display:grid;*/
-/*    grid-template-columns: 1fr 1fr;*/
-/*    display: inline-flex;*/
-/*}*/
-
-/*.header-second-row {*/
-/*    !* display: grid; *!*/
-/*    !* grid-template-columns: 1fr 1fr; *!*/
-/*    background-color: #4d90fe;*/
-/*}*/
-
-/*.main-content {*/
-/*    display: grid;*/
-/*}*/
-
-
-
-/*!* Search Bar *!*/
-/*input{*/
-/*    border: none;*/
-/*    padding: 10px;*/
-/*    margin: 10px;*/
-/*    height: 20px;*/
-/*    width: 500px;*/
-/*    border:3px solid #eaeaea;*/
-/*    outline:none;*/
-/*}*/
-/*input:hover{*/
-/*    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;*/
-/*}*/
-/*input:focus{*/
-/*    border-color:#4d90fe;*/
-/*}*/
-
-/*input[type="submit"] {*/
-/*    border-radius: 2px;*/
-/*    background: #f2f2f2;*/
-/*    border: 1px solid #f2f2f2;*/
-/*    color: #757575;*/
-/*    cursor: default;*/
-/*    font-size: 14px;*/
-/*    font-weight: bold;*/
-/*    width: 100px;*/
-/*    padding: 0 16px;*/
-/*    height:36px;*/
-/*}*/
-/*input[type="submit"]:hover {*/
-/*    box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
-/*    background: #f8f8f8;*/
-/*    border: 1px solid #c6c6c6;*/
-/*    box-shadow: 0 1px 1px rgba(0,0,0,0.1);*/
-/*    color: #222;*/
-/*}*/
-/*.search-bar-go{*/
-/*    display: inline-flex;*/
-/*}*/
-
-/*#search-icon {*/
-/*    !* Center the search *!*/
-/*    padding: 1.5em;*/
-/*}*/
-
-/*#search-bar {*/
-/*    display: flex;*/
-/*}*/
-
-/*#go {*/
-/*    margin-right:8em;*/
-/*}*/
-
-/*    !*Top Right Settings Corner*!*/
-/*.user-settings-corner {*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(3, 75px);*/
-/*}*/
-
-/*.circle-profile-image {*/
-/*    width: 75%;*/
-/*    !* height: 75%; *!*/
-/*    clip-path: circle();*/
-/*    !*object-fit: cover;*!*/
-/*    !*position: sticky;*!*/
-/*}*/
-
-/*#bell-icon {*/
-/*    padding: 1.5em;*/
-/*}*/
-
-/*!* Second Row of Header *!*/
-/*.circle-profile-image-BIG {*/
-/*    width: 25%;*/
-/*    height: 75%;*/
-/*    clip-path: circle();*/
-/*    object-fit: cover;*/
-/*    margin-left: auto;*/
-/*}*/
-
-/*#name-BIG {*/
-/*    font-size: x-large;*/
-/*}*/
-
-/*!*Organize BIG profile photo to be side-to-side with the greeting*!*/
-/*.main-greeting {*/
-/*    display: inline-grid;*/
-/*    grid-template-columns: 1fr 0.75fr;*/
-/*}*/
-
-/*.mini-container {*/
-/*    !* Pad between the BIG-icon+greeting and the action buttons *!*/
-/*    !* margin-right:8em; *!*/
-/*}*/
-
-/*.action-buttons {*/
-/*    padding: 5px;*/
-/*    !* shape-rendering: auto; *!*/
-/*}*!*/
+.card button:hover {
+    opacity: 0.7;
+}
