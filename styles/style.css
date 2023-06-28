@@ -1,5 +1,5 @@
 * {
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 div {
@@ -28,7 +28,6 @@ div {
 .sidebar > div > p {
     color: azure;
     margin: 15px;
-    font-family: Verdana, sans-serif;
 }
 
 .dashboard {
@@ -56,6 +55,11 @@ div {
     grid-template-rows: 2fr 1fr;
 }
 
+.dashboard-projects-title {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
 .dashboard-projects-cards-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -85,6 +89,10 @@ div {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+}
+
+.card-buttons {
+    display: flex;
 }
 
 .card button:hover {
