@@ -39,6 +39,8 @@ div {
 /* CSS to apply to 1st-lvl child of dashboard*/
 .dashboard > div {
     margin-bottom: 5px;
+    height: auto;
+    width: auto;
 }
 
 /* CSS to apply to 2nd-lvl child of dashboard*/
@@ -55,7 +57,7 @@ div {
     grid-template-rows: 2fr 1fr;
 }
 
-.dashboard-projects-title {
+h3 {
     text-align: center;
     padding: 5px;
     margin: 5px;
