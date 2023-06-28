@@ -1,3 +1,28 @@
+// Announcement titles for announcement cards
+const announcementTitles = [
+    "Exciting New Product Launch!",
+    "Upcoming Event: Save the Date!",
+    "Important Notice Regarding Service Changes",
+    "Introducing Our Latest Feature Update",
+    "Limited-Time Offer: Don't Miss Out!",
+    "Join Us for a Special Webinar",
+    "Big News: Company Expansion Plans",
+    "Calling all Developers: Hackathon Announcement",
+    "Customer Appreciation Sale: Discounts Galore!",
+    "Breaking News: Industry Partnership Announcement",
+    "Mark Your Calendars: Annual Conference Announcement",
+    "Now Hiring: Join Our Growing Team!",
+    "Product Recall Alert: Important Information Inside",
+    "Exclusive Sneak Peek: Coming Soon!",
+    "Discover Our New Website Redesign",
+    "Important Security Update: Action Required",
+    "New Blog Post: Expert Insights on Industry Trends",
+    "Join Our Beta Testing Program",
+    "Exciting Collaboration Announcement",
+    "Save Big with Our Summer Sale",
+];
+
+
 // Generates a list of cards as HTML, between 1 and 30 extra cards generated.
 // Returns it as a string
 function generateProjectCards() {
@@ -22,8 +47,26 @@ function generateProjectCards() {
     return output
 }
 
+// Same as the `generateProjectCards` function, but, for the `announcement` card and uses a random title
+function generateAnnouncementCards() {
+    let output = "";
+    card_amount = Math.floor(Math.random() * 16);
+    for(i = 0; i < card_amount; i++){
+        let randomTitle = announcementTitles[Math.floor(Math.random() * announcementTitles.length)];
+        output += `
+                    <div class="announcement-card">
+                        <h5>` + randomTitle + `</h5>
+                        <p>This is a random announcement to show the CSS and HTML capabilities of the author but really there&#39;s nothing of value in this card so one has to wonder as to why you are still reading this</p>
+                        <hr>
+                    </div>
+`
+    }
+    return output
+}
 
 
 
-
+// Set the project cards
 document.getElementById('the-card-container').innerHTML = generateProjectCards();
+document.getElementById('the-announcements-container').innerHTML = generateAnnouncementCards();
+
