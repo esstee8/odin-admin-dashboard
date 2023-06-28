@@ -22,12 +22,20 @@ const announcementTitles = [
     "Save Big with Our Summer Sale",
 ];
 
+const profile_photos = [
+    "kermit.png",
+    "doguito.jpeg",
+    "dog-egg.jpeg",
+    "dog-ears.jpeg"
+]
+
 
 // Generates a list of cards as HTML, between 1 and 30 extra cards generated.
 // Returns it as a string
 function generateProjectCards() {
     let output = "";
-    card_amount = Math.floor(Math.random() * 31);
+    // card_amount = Math.floor(Math.random() * 31);
+    card_amount = 9;
     for(i = 0; i < card_amount; i++){
         output += `
                     <div class="card">
@@ -50,7 +58,8 @@ function generateProjectCards() {
 // Same as the `generateProjectCards` function, but, for the `announcement` card and uses a random title
 function generateAnnouncementCards() {
     let output = "";
-    card_amount = Math.floor(Math.random() * 16);
+    // card_amount = Math.floor(Math.random() * 16);
+    card_amount = 4
     for(i = 0; i < card_amount; i++){
         let randomTitle = announcementTitles[Math.floor(Math.random() * announcementTitles.length)];
         output += `

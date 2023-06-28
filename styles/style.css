@@ -54,6 +54,8 @@ div {
     /*overflow: auto;*/
 }
 
+/*TODO: Fix the grid to be more dynamic and not create unneccessary empty space*/
+/*      Set it to random in `script.js` to get a better idea*/
 .dashboard-body {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -102,4 +104,37 @@ h3 {
 
 .card button:hover {
     opacity: 0.7;
+}
+
+/* For the username card in the `Trending` section */
+.profile-photo-small {
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: end;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trending-card-profile-photo {
+    align-items: end;
+    padding: 5px;
+}
+
+.trending-card-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending-card-text > p {
+    margin: 0 auto;
+    padding: 3px;
+    align-content: flex-start;
+}
+
+.username {
+    font-size: x-large;
 }
