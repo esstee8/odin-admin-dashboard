@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <!-- Link css -->
     <link rel="stylesheet" href="styles/style.css">
+    <!--  Icons  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -18,17 +20,17 @@
             </p>
         </div>
         <div class="sidebar-actions">
-            <p>🏠 Home </p>
-            <p>⌮ Profile</p>
-            <p>💬 Messages</p>
-            <p>📖 History</p>
-            <p>✅ Tasks</p>
-            <p>👥 Communities</p>
+            <button>🏠 Home </button>
+            <button>⌮ Profile</button>
+            <button>💬 Messages</button>
+            <button>📖 History</button>
+            <button>✅ Tasks</button>
+            <button>👥 Communities</button>
         </div>
         <div class="sidebar-account-settings">
-            <p>⚙️ Settings</p>
-            <p>？Support</p>
-            <p>⛨ Privacy</p>
+            <button>⚙️ Settings</button>
+            <button>？Support</button>
+            <button>⛨ Privacy</button>
         </div>
 
         <div class="sidebar-copyright" style="margin-top: 100px">
@@ -38,12 +40,55 @@
 
     <div class="dashboard">
         <div class="dashboard-header">
-            <div class="dashboard-search-bar">
 
+            <div class="dashboard-search-bar">
+                <div class="dashboard-search-icon">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="dashboard-search-box">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="search bar" aria-describedby="basic-addon1">
+                </div>
             </div>
 
-            <div class="dashboard-action-buttons">
+            <div class="dashboard-account-status-buttons">
+                <div class="dashboard-notifications">
+                    <i class="bi bi-app-indicator"></i>
+                </div>
+                <div class="dashboard-profile-photo-normal">
+                    <img src="assets/profile-photos/doguito.jpeg" class="profile-photo-normal" alt="Dog in a crepe">
+                </div>
+                <div class="dashboard-username">
+                    <p class="dashboard-username-text">
+                        @doguito
+                    </p>
+                </div>
+            </div>
 
+            <div class="dashboard-greeting">
+                <div class="dashboard-profile-photo-large">
+                    <img src="assets/profile-photos/doguito.jpeg" class="profile-photo-large" alt="Dog in a crepe">
+                </div>
+                <div class="dashboard-greeting-text">
+                    <h5>Hello there,</h5>
+                    <h3>@doguito</h3>
+                </div>
+            </div>
+
+            <!--                Action buttons                -->
+            <div class="dashboard-action-buttons">
+                <div class="dashboard-action-button">
+                    <button>New️</button>
+                </div>
+                <div class="dashboard-action-button">
+                    <button>Upload</button>
+                </div>
+                <div class="dashboard-action-button">
+                    <button>Share</button>
+                </div>
             </div>
         </div>
 <!--    .dashboard > div    -->
@@ -78,7 +123,7 @@
                 </div>
                 <!--  Here we generalize to GRID rows of Announcement chips  -->
                 <div class="dashboard-announcements-cards-list" id="the-announcements-container">
-                    <div class="announcement-card">
+                    <div class="dashboard-announcement-card">
                         <h5>Whoa this is a random announcement!</h5>
                         <p>This is a random announcement to show the CSS and HTML capabilities of the author but really there&#39;s nothing of value in this card so one has to wonder as to why you are still reading this</p>
                         <hr>
@@ -93,13 +138,13 @@
                 </div>
                 <!--   Here is generalized to GRID rows of user-chip   -->
                 <div class="dashboard-trending-cards-list" id="the-trending-container">
-                    <div class="trending-card">
+                    <div class="dashboard-trending-card">
                         <div class="trending-card-profile-photo">
                             <img src="assets/profile-photos/doguito.jpeg" class="profile-photo-small" alt="Dog in a crepe">
                         </div>
                         <div class="trending-card-text">
-                            <p class="username"> <strong>@doguito</strong> </p>
-                            <p class="headline">Generic Headline Maker</p>
+                            <p class="trending-card-username"> <strong>@doguito</strong> </p>
+                            <p class="trending-card-headline">Generic Headline Maker</p>
                         </div>
                     </div>
                 </div>

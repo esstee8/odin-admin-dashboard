@@ -40,7 +40,7 @@ function generateProjectCards() {
     for(i = 0; i < card_amount; i++){
         output += `
                     <div class="card">
-                        <img src="assets/sad_chihuahua.jpg" alt="Dog with tears of joy" style="width:100%">
+                        <img src="/assets/sad_chihuahua.jpg" alt="Dog with tears of joy" style="width:100%">
                         <h1>Tears of Joy Dog</h1>
                         <p class="price">$5.99</p>
                         <p>Some text about joy of being a dog</p>
@@ -82,12 +82,12 @@ function generateTrendingCards() {
         let randomTitle = profile_photos[Math.floor(Math.random() * profile_photos.length)];
         output += `
 
-                    <div class="trending-card">
+                    <div class="dashboard-trending-card">
                         <div class="trending-card-profile-photo">
                             <img src="assets/profile-photos/${randomTitle[0]}" class="profile-photo-small" alt="Dog in a crepe">
                         </div>
                         <div class="trending-card-text">
-                            <p class="username"> <strong>${randomTitle[1]}</strong> </p>
+                            <p class="trending-card-username"> <strong>${randomTitle[1]}</strong> </p>
                             <p class="headline">${randomTitle[2]}</p>
                         </div>
                     </div>
